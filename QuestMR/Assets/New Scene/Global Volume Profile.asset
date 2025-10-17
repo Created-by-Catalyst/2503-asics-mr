@@ -26,7 +26,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5944d5dca791344186c8265c2b87ac4, type: 3}
   m_Name: VolumetricClouds
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   state:
     m_OverrideState: 1
     m_Value: 1
@@ -167,10 +167,10 @@ MonoBehaviour:
     m_Value: 200
   bottomAltitude:
     m_OverrideState: 1
-    m_Value: 1200
+    m_Value: 0.01
   altitudeRange:
     m_OverrideState: 1
-    m_Value: 2000
+    m_Value: 1500
   shapeOffset:
     m_OverrideState: 1
     m_Value: {x: 0, y: 0, z: 0}
