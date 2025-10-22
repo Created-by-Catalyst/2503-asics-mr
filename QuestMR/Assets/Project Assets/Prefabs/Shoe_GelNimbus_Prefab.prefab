@@ -54,19 +54,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8d6f146ef520b447b0fdb947c83ad6e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.98567367
+      value: 0.96927273
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8d6f146ef520b447b0fdb947c83ad6e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.000000037208146
+      value: -0.00000003658903
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8d6f146ef520b447b0fdb947c83ad6e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.16866414
+      value: 0.24598874
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8d6f146ef520b447b0fdb947c83ad6e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000063668946
+      value: -0.0000000092858174
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8d6f146ef520b447b0fdb947c83ad6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -74,7 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8d6f146ef520b447b0fdb947c83ad6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 19.42
+      value: 28.481
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8d6f146ef520b447b0fdb947c83ad6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -117,7 +117,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 1340859b53b1f8a41b8976dbf2931b97, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0

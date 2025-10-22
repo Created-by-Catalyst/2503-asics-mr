@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5901611479062735088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2633894363019010575}
+  - component: {fileID: 4595564295153215232}
+  m_Layer: 0
+  m_Name: Clouds_Shoe_SuperBlast_Orbit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2633894363019010575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5901611479062735088}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4595564295153215232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5901611479062735088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e8257299c8a20488d8f16726847351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cloudPrefabs:
+  - {fileID: 1863764944039669699, guid: e2a1a1bd033d68445a71a10ebaa39b80, type: 3}
+  - {fileID: 6269152884439325965, guid: d1fa1a4ca615b4047b18e4205208515d, type: 3}
+  - {fileID: 4144177088703724099, guid: c8b0e1f03429c8c4da0877e36ded3808, type: 3}
+  - {fileID: 5019653769435103308, guid: 1d1a9c3b435509143a18be33fac193d2, type: 3}
+  - {fileID: 7333389260640244622, guid: 3dc338039bc3abe4a836a8fcd0c06b14, type: 3}
+  - {fileID: 7608876716443840882, guid: a1e8bfee280c7c3498c83ed1f371c32d, type: 3}
+  - {fileID: 8889969648920198156, guid: 14b7103e3d76c164c9d579d920654f4c, type: 3}
+  - {fileID: 4311033527856652518, guid: 3c85aff6d47e5474fb7f104642427f92, type: 3}
+  - {fileID: 62718587661988233, guid: c715fa9b365971d4db8b28b0a85cb0f5, type: 3}
+  - {fileID: 8549993029389209520, guid: 9186aad00525bc646a4cdf567480373f, type: 3}
+  - {fileID: 1550329941788027596, guid: b3377934313b9844791c7d5f8aeb5677, type: 3}
+  - {fileID: 1375685048974530236, guid: 6dbc045351811da46afc424c010be980, type: 3}
+  - {fileID: 5781052641440671934, guid: 5df42ec640d8a3e4cba8c1f4e7eeb096, type: 3}
+  - {fileID: 118771766096023141, guid: 34ac1c15d14873a43bb93ff4fb53a500, type: 3}
+  - {fileID: 1439028817977084361, guid: 61294e7df47a05b45a6196e4ea2a719e, type: 3}
+  - {fileID: 672015503651162662, guid: 8e009c9dc64d62440bbb2ebaa0b54f16, type: 3}
+  - {fileID: 7639678843582250628, guid: b0c4f2ab52af3f745aeaab49079bb2ed, type: 3}
+  - {fileID: 267205687270855239, guid: cd3afbb64e1ad3342854c322f49f55ee, type: 3}
+  - {fileID: 5455558441295474475, guid: 3521c627465d58746bbf5788ffa55068, type: 3}
+  - {fileID: 1060775874077855592, guid: db09af4b55221de4791f8c5a60f1a52b, type: 3}
+  cloudsDensity: 30
+  radius: 2
+  radiusOffset: 0.5
+  minHeight: 0.25
+  maxHeight: 2.2
+  useScaleInEffect: 1
+  minScale: 0.04
+  maxScale: 0.075
+  scaleInDuration: 1
+  minSpawnDelay: 0.01
+  maxSpawnDelay: 0.05
+  orbitSpeed: -0.07
+  speedVariation: 0.3
+  bobAmplitude: 0.2
+  bobSpeed: 0.25

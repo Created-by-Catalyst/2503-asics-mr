@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 20e24cba48a5e63429ba7dd5377bb0a6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 177524
+  packageName: Stylized Clouds Pack
+  packageVersion: 2.0
+  assetPath: Assets/Stylized Clouds Pack/Settings/Post-process Volume.prefab
+  uploadId: 441591

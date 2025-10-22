@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7947085800304826336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4154252727080624827}
+  - component: {fileID: 8899089807086761183}
+  m_Layer: 0
+  m_Name: Clouds_HUB_Orbit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4154252727080624827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7947085800304826336}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8899089807086761183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7947085800304826336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e8257299c8a20488d8f16726847351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cloudPrefabs:
+  - {fileID: 1863764944039669699, guid: bf8145b7e80f79f4297055e69a5eb030, type: 3}
+  - {fileID: 6269152884439325965, guid: 147214938d6d41f49899721a2d77c881, type: 3}
+  - {fileID: 4144177088703724099, guid: 751547d8c8807ed4fa9f4a8e9fff15b8, type: 3}
+  - {fileID: 5019653769435103308, guid: afeef4422d25e3c4f976d3d4dd74362c, type: 3}
+  - {fileID: 7333389260640244622, guid: d84dab0410b24eb42aedcadae847b6af, type: 3}
+  - {fileID: 7608876716443840882, guid: 26f19df995510fa4ca68bbbffea63041, type: 3}
+  - {fileID: 8889969648920198156, guid: 423808b1f1119b543a3f7823188d3caa, type: 3}
+  - {fileID: 4311033527856652518, guid: a0833bce943c3374c93191fb9d3ae84c, type: 3}
+  - {fileID: 62718587661988233, guid: 2fd7932c679572b4cabff3a5eebde115, type: 3}
+  - {fileID: 8549993029389209520, guid: d0d8773f3be91494385d547c73c8e577, type: 3}
+  - {fileID: 1550329941788027596, guid: f2873d14cc0ea7b479251e0be9e7f640, type: 3}
+  - {fileID: 1375685048974530236, guid: 4864b47fc601af140959915d6240efa5, type: 3}
+  - {fileID: 5781052641440671934, guid: 5f498e26bf00772479ea3d7bedba4ca3, type: 3}
+  - {fileID: 118771766096023141, guid: 44c7845d2403b6f4b8998c7094e8ee47, type: 3}
+  - {fileID: 1439028817977084361, guid: d2014157d1737ea4b8e5159568e46bc0, type: 3}
+  - {fileID: 672015503651162662, guid: 304b757edc014044f8db9ec9ed38298c, type: 3}
+  - {fileID: 7639678843582250628, guid: 4d4a7bbbbab01c048bdc22fd71ae00b8, type: 3}
+  - {fileID: 267205687270855239, guid: 5fa966a7df5bf014d82d879245c16c82, type: 3}
+  - {fileID: 5455558441295474475, guid: 01f950b97503c9a48ac06d07aa4c2dda, type: 3}
+  - {fileID: 1060775874077855592, guid: 4830c2a642a28e44eba1671030fcb32f, type: 3}
+  cloudsDensity: 50
+  radius: 15
+  radiusOffset: 1
+  minHeight: 0.4
+  maxHeight: 8
+  useScaleInEffect: 0
+  minScale: 0.1
+  maxScale: 0.25
+  scaleInDuration: 0.75
+  minSpawnDelay: 0.02
+  maxSpawnDelay: 0.05
+  orbitSpeed: 0.07
+  speedVariation: 0.3
+  bobAmplitude: 0.2
+  bobSpeed: 0.25

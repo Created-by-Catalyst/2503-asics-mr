@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: af17eae5a9c64c74e9662ad0883373c0
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 177524
+  packageName: Stylized Clouds Pack
+  packageVersion: 2.0
+  assetPath: Assets/Stylized Clouds Pack/Shaders/SimplexNoise3D.hlsl
+  uploadId: 441591
