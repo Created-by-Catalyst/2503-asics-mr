@@ -67,7 +67,7 @@ MonoBehaviour:
   - {fileID: 1060775874077855592, guid: 4830c2a642a28e44eba1671030fcb32f, type: 3}
   cloudsDensity: 50
   radius: 15
-  radiusOffset: 1
+  radiusOffset: 8
   minHeight: 0.4
   maxHeight: 8
   useScaleInEffect: 0
