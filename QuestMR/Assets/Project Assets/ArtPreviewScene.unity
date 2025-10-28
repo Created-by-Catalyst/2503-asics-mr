@@ -1513,10 +1513,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shoe_GelCumulus_Prefab
       objectReference: {fileID: 0}
-    - target: {fileID: 3018391537874196548, guid: 350b731535b2003469a3ac5f658dc25a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
