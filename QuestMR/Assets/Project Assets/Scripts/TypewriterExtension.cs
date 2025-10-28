@@ -7,7 +7,7 @@ public static class TypewriterExtensions
 {    public static async UniTask TypeTextAsync(
         TMP_Text tmp,
         string fullText,
-        float delayPerChar = 0.005f,
+        float delayPerChar = 0.015f,
         CancellationToken cancellationToken = default)
     {
         if (tmp == null || string.IsNullOrEmpty(fullText))
