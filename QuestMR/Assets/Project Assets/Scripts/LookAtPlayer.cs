@@ -9,7 +9,7 @@ public class LookAtPlayer : MonoBehaviour
 
     private void Start()
     {
-        player = GameManager.instance.player.transform;
+        player = GameManager.instance.playerCamera.transform;
     }
 
 
@@ -19,7 +19,7 @@ public class LookAtPlayer : MonoBehaviour
         if (player != null)
         {
             // Get target position at the same height (ignore vertical)
-            Vector3 targetPosition = new Vector3(player.position.x, player.position.y, player.position.z);
+            Vector3 targetPosition = new Vector3(player.position.x, transform.position.y, player.position.z);
 
             // Compute direction
             Vector3 direction = (targetPosition - transform.position).normalized;
@@ -28,7 +28,7 @@ public class LookAtPlayer : MonoBehaviour
             {
                 // Calculate target rotation only on Y axis
                 //-direction to invert it
-                Quaternion targetRotation = Quaternion.LookRotation(direction);
+                Quaternion targetRotation = Quaternion.LookRotation(-direction);
 
                 // Optional: Smooth rotation
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
