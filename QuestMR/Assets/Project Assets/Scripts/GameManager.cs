@@ -1,4 +1,6 @@
+using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,7 +10,6 @@ public class GameManager : MonoBehaviour
     public GameObject playerCamera;
 
     public Transform startingPoint;
-
 
     [Tooltip("The root object you move: [BuildingBlock] Camera Rig")]
     public Transform playerRigRoot;
@@ -42,14 +43,41 @@ public class GameManager : MonoBehaviour
                 Debug.LogError("CenterEyeAnchor not found. Please assign it manually.");
             }
         }
+
+
+        OVRManager.HMDUnmounted += onRemovedHeadset;
+    }
+
+    bool[] shoesTouched = new bool[] {false,false,false};
+
+    public GameObject removeHeadsetUI;
+
+
+    public GameObject instructions;
+
+    public void ShoeTouched(int id)
+    {
+        shoesTouched[id] = true;
+
+        if(shoesTouched.All(b => b == true))
+        {
+            instructions.SetActive(false);
+            removeHeadsetUI.SetActive(true);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        OVRManager.HMDUnmounted -= onRemovedHeadset;
+    }
+
+    void onRemovedHeadset()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void ResetVRPosition()
     {
-        //vrRig.position = startingPoint.position;
-        //vrRig.rotation = startingPoint.rotation;
-
-
         RecenterPlayer();
     }
 

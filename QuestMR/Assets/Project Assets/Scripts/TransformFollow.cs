@@ -8,10 +8,10 @@ public class TransformFollow : MonoBehaviour
     Transform point;
 
 
-    private void FixedUpdate()
+    private void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, point.position, Time.deltaTime * 5);
-        transform.rotation = Quaternion.Lerp(transform.rotation, point.rotation, Time.deltaTime * 4);
+        transform.position = Vector3.Lerp(transform.position, point.position, Time.deltaTime * 3);
+        transform.rotation = Quaternion.Lerp(transform.rotation, point.rotation, Time.deltaTime * 2);
     }
 
 }

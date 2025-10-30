@@ -19,7 +19,7 @@ public class LookAtPlayer : MonoBehaviour
         if (player != null)
         {
             // Get target position at the same height (ignore vertical)
-            Vector3 targetPosition = new Vector3(player.position.x, transform.position.y, player.position.z);
+            Vector3 targetPosition = new Vector3(player.position.x, player.position.y, player.position.z);
 
             // Compute direction
             Vector3 direction = (targetPosition - transform.position).normalized;
