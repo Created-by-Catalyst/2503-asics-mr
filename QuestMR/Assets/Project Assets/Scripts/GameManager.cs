@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
         }
 
 
+        OVRManager.HMDMounted += onRemovedHeadset;
         OVRManager.HMDUnmounted += onRemovedHeadset;
     }
 
@@ -83,6 +84,7 @@ public class GameManager : MonoBehaviour
 
     private void OnDestroy()
     {
+        OVRManager.HMDMounted -= onRemovedHeadset;
         OVRManager.HMDUnmounted -= onRemovedHeadset;
     }
 
