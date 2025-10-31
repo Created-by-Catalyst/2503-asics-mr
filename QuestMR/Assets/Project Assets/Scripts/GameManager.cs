@@ -1,4 +1,5 @@
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,6 +22,10 @@ public class GameManager : MonoBehaviour
     public Transform resetTarget;
 
     private Transform _playerRigTransform;
+
+    public AudioSource audioSource;
+
+    public AudioClip[] sounds;
 
     private void Awake()
     {
@@ -55,9 +60,19 @@ public class GameManager : MonoBehaviour
 
     public GameObject instructions;
 
+    public void ShoeInitialGrab(int id)
+    {
+        if (shoesTouched[id] == false)
+        {
+            audioSource.clip = sounds[id];
+            audioSource.Play();
+        }
+    }
+
     public void ShoeTouched(int id)
     {
-        shoesTouched[id] = true;
+
+            shoesTouched[id] = true;
 
         if(shoesTouched.All(b => b == true))
         {
